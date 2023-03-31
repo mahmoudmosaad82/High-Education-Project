@@ -1,4 +1,4 @@
-##description of controller file
+## description of controller file
 This is a Node.js module that exports several functions related to managing a list of students in a computer department. The module requires other modules, such as Joi and validation helpers.
 
 The getAllstudents function returns all students in the computer_dep_students array. The getStudentById function finds and returns a student by the ID specified in the request parameters.
