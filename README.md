@@ -14,6 +14,8 @@ User management: The system should provide role-based access controls to ensure 
 
 To wrap up, the student management system should be designed to streamline administrative processes, improve data accuracy and accessibility, and support decision-making based on data analysis.
 
+
+
 Here we get all the saved data (objects) with .get() method ....
 
 <img width="1279" alt="Screen Shot 2023-04-01 at 12 13 25 AM" src="https://user-images.githubusercontent.com/66203316/229242703-79405957-e050-49ba-9d1d-36014999a44a.png">
