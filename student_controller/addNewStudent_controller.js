@@ -45,7 +45,7 @@ const editStudent = (req, res) => {
     // Parsent transforms string id to int
     const student = computer_dep_students.find(c => c.id === parseInt(req.params.id));
     
-    if (!student)// in case there is no match in id
+  /*  if (!student)// in case there is no match in id
 
         res.status(404).send('The student with the given ID not found !');
 
@@ -55,7 +55,7 @@ const editStudent = (req, res) => {
         // details[0] prints the firs line of the error
         res.status(400).send(result.error.details[0].message);
         console.log(result);
-        return;
+        return;*/
 
     }
     // we get the new name from api body
