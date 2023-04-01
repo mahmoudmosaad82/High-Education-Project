@@ -28,7 +28,7 @@ Here we confirm that that the data is sent succesfully by calling .get() method 
 
 <img width="1279" alt="Screen Shot 2023-04-01 at 12 14 42 AM" src="https://user-images.githubusercontent.com/66203316/229242697-478150b9-5d71-4ccb-80eb-3201daa49a8e.png">
 
-Here we delet a specific objeject by it's id by cakking .delete() method ...
+Here we delet a specific objeject by it's id by calling .delete() method ...
 
 <img width="1280" alt="Screen Shot 2023-04-01 at 12 15 08 AM" src="https://user-images.githubusercontent.com/66203316/229242695-be7edd4f-ca28-4d05-8e38-c9283faed170.png">
 
