@@ -44,20 +44,36 @@ Here we confirm that that the data is updated succesfully by calling .get() meth
 
 <img width="1280" alt="Screen Shot 2023-04-01 at 12 16 40 AM" src="https://user-images.githubusercontent.com/66203316/229242681-0d798960-397f-4adb-ba05-b0fa97851e1c.png">
 
-TASK 2 :
+##TASK 2 :
+### Creating MongoDB. and we see that we have 2 Documents
 ![db_Saved data](https://user-images.githubusercontent.com/65768688/231809400-7bdae765-1d2e-4169-901a-892eb27af25f.PNG)
+### Getting all data we have by using PostMan
 ![get savedData](https://user-images.githubusercontent.com/65768688/231809408-09308c60-4025-4359-82f6-f6b606e268e3.PNG)
+### Getting Student Details By ID
+
 ![getDataWithID](https://user-images.githubusercontent.com/65768688/231809411-b69b2ef1-d380-4f69-803a-7ad2303882e2.PNG)
+### Adding New Document(student)
 
 ![AddNewStudent](https://user-images.githubusercontent.com/65768688/231809378-af85dd61-ec7d-4d2c-aba8-cc3a12d1163e.PNG)
+### To make sure that our work is properly working, we try to see all student we have after adding new student
+
 ![confirmThatNewStudentIsSent](https://user-images.githubusercontent.com/65768688/231809383-6887e6f4-5c82-4139-a007-44c5f7cf83ae.PNG)
+### Also Making sure that student we have added him have added to MongoDB
+
 ![db_confirmthatStudentIs Added](https://user-images.githubusercontent.com/65768688/231809398-904d34df-5be5-46b2-86c5-fe39f82077c9.PNG)
+### updating Student By ID and use Edit endpoint
+
 
 ![editStudent](https://user-images.githubusercontent.com/65768688/231809407-f539ebe0-5e6b-4fbc-889f-2c5c1216ba07.PNG)
+### Confirm that my most recent update has been successfully executed in MongoDB
+
 ![db_confirmEditing](https://user-images.githubusercontent.com/65768688/231809396-cdbbf19f-e1a4-4749-a4d4-1331471552f4.PNG)
 
+### Use Delet Endpoint and delete student by ID
 
 ![deleteStudent](https://user-images.githubusercontent.com/65768688/231809402-0cb362b3-43ed-4e8f-8e29-1375401917bf.PNG)
+### Confirm that my most recent delete has been successfully executed in MongoDB
+
 ![db_confirm that student is deleted](https://user-images.githubusercontent.com/65768688/231809388-0112bbd2-8b94-45e3-885b-89de900d1f97.PNG)
 
 
