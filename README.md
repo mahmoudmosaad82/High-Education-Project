@@ -43,3 +43,21 @@ Here we update a specific object by it's id by calling .put() method ....
 Here we confirm that that the data is updated succesfully by calling .get() method again to see the update in data ....
 
 <img width="1280" alt="Screen Shot 2023-04-01 at 12 16 40 AM" src="https://user-images.githubusercontent.com/66203316/229242681-0d798960-397f-4adb-ba05-b0fa97851e1c.png">
+
+TASK 2 :
+![db_Saved data](https://user-images.githubusercontent.com/65768688/231809400-7bdae765-1d2e-4169-901a-892eb27af25f.PNG)
+![get savedData](https://user-images.githubusercontent.com/65768688/231809408-09308c60-4025-4359-82f6-f6b606e268e3.PNG)
+![getDataWithID](https://user-images.githubusercontent.com/65768688/231809411-b69b2ef1-d380-4f69-803a-7ad2303882e2.PNG)
+
+![AddNewStudent](https://user-images.githubusercontent.com/65768688/231809378-af85dd61-ec7d-4d2c-aba8-cc3a12d1163e.PNG)
+![confirmThatNewStudentIsSent](https://user-images.githubusercontent.com/65768688/231809383-6887e6f4-5c82-4139-a007-44c5f7cf83ae.PNG)
+![db_confirmthatStudentIs Added](https://user-images.githubusercontent.com/65768688/231809398-904d34df-5be5-46b2-86c5-fe39f82077c9.PNG)
+
+![editStudent](https://user-images.githubusercontent.com/65768688/231809407-f539ebe0-5e6b-4fbc-889f-2c5c1216ba07.PNG)
+![db_confirmEditing](https://user-images.githubusercontent.com/65768688/231809396-cdbbf19f-e1a4-4749-a4d4-1331471552f4.PNG)
+
+
+![deleteStudent](https://user-images.githubusercontent.com/65768688/231809402-0cb362b3-43ed-4e8f-8e29-1375401917bf.PNG)
+![db_confirm that student is deleted](https://user-images.githubusercontent.com/65768688/231809388-0112bbd2-8b94-45e3-885b-89de900d1f97.PNG)
+
+
