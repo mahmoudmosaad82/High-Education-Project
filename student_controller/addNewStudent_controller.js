@@ -19,7 +19,7 @@ const getStudentById = (req, res) => {
     }
 };
 
-cconst addStudent = async (req, res) => {
+const addStudent = async (req, res) => {
     try {
         const student = await computer_dep_students.create(req.body);
         res.status(201).send(student);
