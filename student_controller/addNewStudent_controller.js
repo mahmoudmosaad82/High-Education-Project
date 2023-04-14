@@ -58,18 +58,16 @@ const editStudent = async (req, res) => {
     }
 };
 
-const deleteStudent = (req, res) => {
-    // serach for the id we want to delet if it is exist or not
-    const student = computer_dep_students.find(c => c.id === parseInt(req.params.id));
-    if (!student)
-        res.status(404).send('The Course with the given ID not found !');
-    /// we get the index of that object
-    const index = computer_dep_students.indexOf(student);
-    /// delet object
-    computer_dep_students.splice(index, 1);
-
-    res.send(student);
+const deleteStudent = async (req, res) => {
+    try {
+        const student = await computer_dep_students.deleteOne({ _id: req.params.id });
+        res.status(200).send(student);
+    } catch (error) {
+        res.status(400).send(error);
+        
+    }
 };
+
 
 module.exports = {
     getAllstudents,
