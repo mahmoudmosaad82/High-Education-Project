@@ -4,20 +4,26 @@ const { validateStudentName } = require('../helper/validation');
 const {validateStudentId} = require('../helper/validation');
 
 
-
-
-const getAllstudents = (req, res) => {
-    res.send(computer_dep_students);
-};
-
-const getStudentById = (req, res) => {
-    const student = computer_dep_students.find(c => c.id === parseInt(req.params.id));
-    if (!student) {
-        res.status(404).send('The student with the given ID not found !');
-    } else {
-        res.send(student);
+const getAllstudents = async (req, res) => {
+    try {
+        const AllStudents = await computer_dep_students.find({});
+        res.status(200).send(AllStudents);
+    } catch (error) {
+        res.status(400).send(error);
     }
 };
+
+const getStudentById =  async (req, res) => {
+    try {
+        //findById
+        const StudentById = await computer_dep_students.findOne({ _id: req.params.id });
+        res.status(200).send(StudentById);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+};
+
+
 
 const addStudent = async (req, res) => {
     try {
