@@ -24,7 +24,6 @@ const getStudentById =  async (req, res) => {
 };
 
 
-
 const addStudent = async (req, res) => {
     try {
         const student = await computer_dep_students.create(req.body);

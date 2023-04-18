@@ -20,7 +20,7 @@ To wrap up, the student management system should be designed to streamline admin
 
 <img width="1279" alt="Screen Shot 2023-04-01 at 12 13 25 AM" src="https://user-images.githubusercontent.com/66203316/229242703-79405957-e050-49ba-9d1d-36014999a44a.png">
 
-Here we send the data (objects) to the server using .post() method....
+### Here we send the data (objects) to the server using .post() method....
 
 <img width="1280" alt="Screen Shot 2023-04-01 at 12 14 18 AM" src="https://user-images.githubusercontent.com/66203316/229242700-fecc417e-6e7d-4543-880f-6051b5346315.png">
 
@@ -61,7 +61,7 @@ Here we send the data (objects) to the server using .post() method....
 ### Also Making sure that student we have added him have added to MongoDB
 
 ![db_confirmthatStudentIs Added](https://user-images.githubusercontent.com/65768688/231809398-904d34df-5be5-46b2-86c5-fe39f82077c9.PNG)
-### updating Student By ID and use Edit endpoint
+### Updating Student By ID and use Edit endpoint
 
 
 ![editStudent](https://user-images.githubusercontent.com/65768688/231809407-f539ebe0-5e6b-4fbc-889f-2c5c1216ba07.PNG)
