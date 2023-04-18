@@ -1,0 +1,42 @@
+# That file to test the API in VS code by intalling extension REST CLient.
+###Get a list of all student
+GET http://localhost:3000/api/addStudentRouter/
+
+### Create a student
+POST http://localhost:3000/api/addStudentRouter/
+Content-Type: application/json
+
+{
+    "_id": "64396e4e5bb0237bf7ac8090",
+    "student_name": "Mona Ahmed Mousa",
+    "student_dep": "Civil Enginerring",
+    "student_UniversityID": 109223,
+    "academic_year": 2012,
+    "degree": "Bachelor Degree",
+    "subjects": [
+        "comm12"
+    ]
+}
+
+### GET a student by id
+GET http://localhost:3000/api/addStudentRouter/64396e4e5bb0237bf7ac8035
+### Update a product by id
+PUT  http://localhost:3000/api/addStudentRouter/64396e4e5bb0237bf7ac8035
+Content-Type: application/json
+
+{
+  "student_name": "Mahmoud Mosaad Abdelrahman"
+}
+
+
+### Delete a product by id
+DELETE  http://localhost:3000/api/addStudentRouter/
+
+### GET a student by id
+GET http://localhost:3000/api/addStudentRouter/64396e4e5bb0237bf7ac8090
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
+
+
+

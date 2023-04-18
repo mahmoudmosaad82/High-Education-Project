@@ -4,40 +4,33 @@ const { validateStudentName } = require('../helper/validation');
 const {validateStudentId} = require('../helper/validation');
 
 
-
-
-const getAllstudents = (req, res) => {
-    res.send(computer_dep_students);
-};
-
-const getStudentById = (req, res) => {
-    const student = computer_dep_students.find(c => c.id === parseInt(req.params.id));
-    if (!student) {
-        res.status(404).send('The student with the given ID not found !');
-    } else {
-        res.send(student);
+const getAllstudents = async (req, res) => {
+    try {
+        const AllStudents = await computer_dep_students.find({});
+        res.status(200).send(AllStudents);
+    } catch (error) {
+        res.status(400).send(error);
     }
 };
 
-const addStudent = (req, res) => {
-    	 /*   if(!req.body.name || req.body.name.length<3){
-           // res.status(400).send('Name is required and must be more than 3 characters');
-     */  }
+const getStudentById =  async (req, res) => {
+    try {
+        //findById
+        const StudentById = await computer_dep_students.findOne({ _id: req.params.id });
+        res.status(200).send(StudentById);
+    } catch (error) {
+        res.status(400).send(error);
+    }
+};
 
-   
 
-    const student = {
-        id: computer_dep_students.length + 1,
-        student_name:req.body.student_name,
-        student_dep:req.body.student_dep,
-        sudent_UniversityID:req.body.sudent_UniversityID,
-        academic_year:req.body.academic_year,
-        degree:req.body.degree,
-        subjects:req.body.subjects,
-       
-    };
-    computer_dep_students.push(student);
-    res.send(student);
+const addStudent = async (req, res) => {
+    try {
+        const student = await computer_dep_students.create(req.body);
+        res.status(201).send(student);
+    } catch (error) {
+        res.status(400).send(error);
+    }
 };
 
 const editStudent = async (req, res) => {
@@ -72,8 +65,9 @@ const editStudent = async (req, res) => {
 
 const deleteStudent = async (req, res) => {
     try {
-        const student = await computer_dep_students.deleteOne({ _id: req.params.id });
+       const student = await computer_dep_students.findOne({ _id: req.params.id });
         res.status(200).send(student);
+        await computer_dep_students.deleteOne({ _id: req.params.id });
     } catch (error) {
         res.status(400).send(error);
         
