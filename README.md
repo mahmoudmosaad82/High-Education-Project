@@ -69,7 +69,7 @@ To wrap up, the student management system should be designed to streamline admin
 
 ![db_confirmEditing](https://user-images.githubusercontent.com/65768688/231809396-cdbbf19f-e1a4-4749-a4d4-1331471552f4.PNG)
 
-### Use Delet Endpoint and delete student by ID
+### Use Delete Endpoint and delete student by ID
 
 ![deleteStudent](https://user-images.githubusercontent.com/65768688/231809402-0cb362b3-43ed-4e8f-8e29-1375401917bf.PNG)
 ### Confirm that my most recent delete has been successfully executed in MongoDB
@@ -81,15 +81,14 @@ To wrap up, the student management system should be designed to streamline admin
 ## TASK 3 :
 
 
+###  We build docker image using the command  < docker build -t nodejs-api-rest:latest >
+###  Also, run docker image by using the command < docker run nodejs-api-rest > 
+![2](https://user-images.githubusercontent.com/65768688/232782546-6d49d7b2-c336-40ac-8def-ae28aff11d11.jpeg)
 
-###  run docker by using the command < docker run nodejs-api-rest > and
-this is the remot repository after we push docker by using the command  < docker run nodejs-api-rest >
+### Here our remote repository after we push docker image by using the command <docker push nodejs-api-rest>
 
 ![1](https://user-images.githubusercontent.com/65768688/232782540-a75b2022-2ac8-4a14-9044-b62961438a2e.jpeg)
 
 
-### After we build docker using the command  < docker build -t nodejs-api-rest >
-
-![2](https://user-images.githubusercontent.com/65768688/232782546-6d49d7b2-c336-40ac-8def-ae28aff11d11.jpeg)
 
 
