@@ -77,3 +77,19 @@ To wrap up, the student management system should be designed to streamline admin
 ![db_confirm that student is deleted](https://user-images.githubusercontent.com/65768688/231809388-0112bbd2-8b94-45e3-885b-89de900d1f97.PNG)
 
 
+
+## TASK 3 :
+
+
+
+###  run docker by using the command < docker run nodejs-api-rest > and
+this is the remot repository after we push docker by using the command  < docker run nodejs-api-rest >
+
+![1](https://user-images.githubusercontent.com/65768688/232782540-a75b2022-2ac8-4a14-9044-b62961438a2e.jpeg)
+
+
+### After we build docker using the command  < docker build -t nodejs-api-rest >
+
+![2](https://user-images.githubusercontent.com/65768688/232782546-6d49d7b2-c336-40ac-8def-ae28aff11d11.jpeg)
+
+
