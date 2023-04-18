@@ -34,6 +34,7 @@ DELETE  http://localhost:3000/api/addStudentRouter/
 
 ### GET a student by id
 GET http://localhost:3000/api/addStudentRouter/64396e4e5bb0237bf7ac8090
+
 ### 404 route Not Found
 GET http://localhost:3000/abc_xyz
 
