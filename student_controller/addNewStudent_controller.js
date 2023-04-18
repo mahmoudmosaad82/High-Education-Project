@@ -65,8 +65,9 @@ const editStudent = async (req, res) => {
 
 const deleteStudent = async (req, res) => {
     try {
-        const student = await computer_dep_students.deleteOne({ _id: req.params.id });
+       const student = await computer_dep_students.findOne({ _id: req.params.id });
         res.status(200).send(student);
+        await computer_dep_students.deleteOne({ _id: req.params.id });
     } catch (error) {
         res.status(400).send(error);
         
